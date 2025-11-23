@@ -1,78 +1,20 @@
-
-main .light-box {
-  margin: 2rem 0;
-  padding: 1rem;
-  background-color: #f5f5f5;
-  border-radius: 0.5rem;
-  color: rgb(135, 180, 243)
+html, body {
+  font-family: Verdana;
+  font-size: small;
 }
 
-
-.dark-box {
-  padding: 1rem;
-  margin: 2rem 2;
-  background-color: #242121;
-  border-radius: 0.5rem;
-  color: #f5f5f5;
-}
-.dark-box a{ color: #e63946ff;
+.title {
+  font-family: Century;
+  font-weight: 700;
+  font-size: 50px;
+  color: rgb(232, 135, 0);
+  margin-inline-start: 30rem;
 }
 
-.red-box {
-  padding: 1rem;
-  margin: 2rem 0;
-  background-color: #e63946ff;
-  border-radius: 0.5rem;
-  color:#f5f5f5
+.Description {
+    font-size: medium;
 }
 
-
-.red-box a {
-  color: #090909;
-}
-
-.blue-box {
-  padding: 1rem;
-  margin: 2rem 0;
-  background-color: #457b9dff;
-  border-radius: 0.5rem;
-  color:#f5f5f5
-}
-
-
-li:nth-child(odd){
-  background-color: beige;
-  color:black;
-}
-
-li:last-child {
-  background-color: green;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(166, 202, 251);
-  color: #242121;
-  font-size: 1.5rem;
-  line-height: 1.6;
-}
-
-main {
-  padding: 2rem;
-}
-
-main h1 {
-  font-size: 1.5rem;
-  margin: 0 0 1rem 0;
-  color: #f5f5f5;
-}
-
-main h2 {
-  font-size: 2.5rem;
-  color: #f5f5f5;
-}
-
-
-main p {
-  margin: 1rem 0;
+.GOAL-Description {
+    font-weight: 550
 }
