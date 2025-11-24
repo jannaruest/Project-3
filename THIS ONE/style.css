@@ -1,16 +1,17 @@
+
 html, body {
   font-family: Verdana;
-  font-size: small;
+  font-size: medium;
 }
 
 body {
   background-color: #fff7da;
-  font-family: "Helvetica", "Arial", sans-serif;
   color: #654321;
   margin: 0;
   padding: 0;
 }
 
+/*HTML updated, no long have class="top-bar"*/
 .top-bar {
   width: 100%;
   background-color: rgb(232, 135, 0);
@@ -27,43 +28,32 @@ body {
   margin-inline-start: 30rem;
 }
 
-<<<<<<< HEAD
-/*Testing for targetting Controls*/
-#Controls {
-  color: rgb(48, 194, 145);
-}
-
-/*Testing for targetting Points*/
-#Points {
-  color: blue;
-
-}
-
-/*Changing  the size of H2, used H2 for sequentiality of headings*/
-.CONTROLS-POINTS h2 {
-  font-size: small;
-  margin-bottom: 0.25rem;
-}
-.CONTROLS-POINTS p {
-  margin-top: 0rem;
-}
-.CONTROLS-POINTS ul {
-  margin-top: 0rem;
-}
-=======
-.footer {
-  width: 100%;
-  background-color: rgb(232, 135, 0);
-  color: white;
-  padding: 15px;
-  text-align: center;
-  font-size: 15px;
-}
-
 body {
   background-color: lightyellow;
 }
 
+.ControlsPoints h2{
+  font-size: medium;
+  margin-top: 2rem;
+  margin-bottom: 0.35rem;
+}
+.ControlsPoints p {
+  margin-top: 0rem;
+  margin-bottom: 2rem;
+}
+.ControlsPoints ul {
+  margin: 0%;
+}
+.VideoDemo h2 {
+  font-size: larger;
+  margin-top: 4rem;
+  color: rgb(217, 40, 40); /*TEMPORARY COLOUR*/
+
+}
+
+
+
+/*BUTTON AND BELOW: */
 button {
   padding: 12px 24px;
   background: #654321;
@@ -77,4 +67,13 @@ button {
 button:hover {
   transform: scale(1.06);
 }
->>>>>>> 77038115172c0468a692e8b126683c85ff8aa97e
+
+
+.footer {
+  width: 100%;
+  background-color: rgb(232, 135, 0);
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-size: 15px;
+}
