@@ -4,6 +4,12 @@ html, body {
   font-size: medium;
 }
 
+.title-section {
+  display: flex;
+  justify-content: center;
+  color: rgb(232, 135, 0);
+}
+
 body {
   background-color: #fff7da;
   color: #654321;
@@ -11,6 +17,14 @@ body {
   padding: 0;
 }
 
+body {
+  text-align: center;
+}
+ul {
+  list-style-position: inside;
+  text-align: center;
+  padding-left: 0;
+}
 /*HTML updated, no long have class="top-bar"*/
 .top-bar {
   width: 100%;
