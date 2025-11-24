@@ -3,6 +3,22 @@ html, body {
   font-size: small;
 }
 
+body {
+  background-color: #fff7da;
+  font-family: "Helvetica", "Arial", sans-serif;
+  color: #654321;
+  margin: 0;
+  padding: 0;
+}
+
+.top-bar {
+  width: 100%;
+  background-color: rgb(232, 135, 0);
+  color: #fff7da;
+  padding: 15px;
+  font-size: 20px;
+}
+
 .title {
   font-family: Century;
   font-weight: 700;
@@ -11,6 +27,7 @@ html, body {
   margin-inline-start: 30rem;
 }
 
+<<<<<<< HEAD
 /*Testing for targetting Controls*/
 #Controls {
   color: rgb(48, 194, 145);
@@ -33,3 +50,31 @@ html, body {
 .CONTROLS-POINTS ul {
   margin-top: 0rem;
 }
+=======
+.footer {
+  width: 100%;
+  background-color: rgb(232, 135, 0);
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-size: 15px;
+}
+
+body {
+  background-color: lightyellow;
+}
+
+button {
+  padding: 12px 24px;
+  background: #654321;
+  border: none;
+  border-radius: 8px;
+  color: rgb(232, 135, 0);
+  font-size: 16px;
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.06);
+}
+>>>>>>> 77038115172c0468a692e8b126683c85ff8aa97e
