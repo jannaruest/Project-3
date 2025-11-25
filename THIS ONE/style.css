@@ -4,6 +4,11 @@ body {
   font-size: medium;
 }
 
+
+/*
+INTRO PAGE FLEX BOX
+*/
+
 .title-section {
   display: flex;
   justify-content: center;
@@ -81,15 +86,19 @@ POINTS
 RULES
 */
 #Rules {
+  display: flex;
+  flex-direction: column;
+  border-radius: 40px;
+  padding-inline: 1rem;
+  padding-bottom: 1rem;
   background-color: aqua;
+  border: 
+  margin-top: 0rem;
+  margin-inline: 2rem;
 }
 
-.RulesControlsPoints h2,
-h3 {
-  font-size: large;
+.RulesControlsPoints h3 {
   margin-top: 3rem;
-  margin-bottom: 0.35rem;
-  text-decoration: underline;
 }
 
 .RulesControlsPoints p {
