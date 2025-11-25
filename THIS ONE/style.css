@@ -19,20 +19,21 @@ body {
   background-color: lightyellow;
 }
 
+.hero{
+  display: fixed;
+  flex-direction: column;
+  align-items: center;
+  gap: 0rem;
+  padding-bottom: 1rem;
+}
+
 ul {
   list-style-position: inside;
   text-align: center;
   padding-left: 0;
   margin-top: 0rem;
 }
-/*HTML updated, no long have class="top-bar"*/
-.top-bar {
-  width: 100%;
-  background-color: rgb(232, 135, 0);
-  color: #fff7da;
-  padding: 15px;
-  font-size: 20px;
-}
+
 
 .title {
   font-family: Century;
@@ -92,8 +93,12 @@ ul {
 .VideoDemo h2 {
   font-size: larger;
   margin-top: 4rem;
+<<<<<<< HEAD
   color: rgb(217, 40, 40); /*TEMPORARY COLOUR*/
   text-decoration: underline;
+=======
+  color: rgb(217, 40, 40); /*temp color*/
+>>>>>>> cfb577b2159f42dcda45f1d137e5964925429937
 
 }
 
