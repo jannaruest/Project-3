@@ -48,8 +48,8 @@ Decorative Apples
 */
 
 .apple-decor1, .apple-decor2 {
-    position: fixed;
-    width: 120px;
+    position: absolute;
+    width: 200px;
     opacity: 0.9;
     pointer-events: none; 
 }
