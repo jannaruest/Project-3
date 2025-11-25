@@ -43,19 +43,18 @@ ul {
 
 .apple-decor1, .apple-decor2 {
     position: fixed;
-    width: 150px;
+    width: 120px;
     opacity: 0.9;
     pointer-events: none; 
 }
 
 .apple-decor1 {
-    top: 250px;
-    left: 20px;
+    top: 340px;
+    left: 10px;
 }
-
 .apple-decor2 {
-    top: 250px;
-    right: 20px;
+    top: 340px;
+    right: 10px;
     transform: scaleX(-1);
 }
 
