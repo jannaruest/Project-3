@@ -1,6 +1,6 @@
 let scoreElement = document.getElementById('Score')
 let highScoreElement = document.getElementById('High-Score')
-let gameContainer = document.querySelector('Game-Container')
+let gameContainer = document.querySelector('.Game-Container')
 let basket = document.getElementById('Basket')
 let action = document.getElementById('Actions')
 
@@ -27,7 +27,7 @@ function createFallingObject(){
     let backgrounds = ["Images/apple.webp", "Images/perfect apple.webp", "Images/pear.webp"]
 
     object.style.background = `url("${background[random]}")`
-    object.style.left = Math.random() * (gameContainer.clientWidth - 30) + 'px'
+    object.style.left = Math.random() * (.gameContainer.clientWidth - 30) + 'px'
     object.style.top = '0px'
     object.style.backgroundPosition = 'center' 
     object.style.backgroundRepeat = 'no-repeat'
