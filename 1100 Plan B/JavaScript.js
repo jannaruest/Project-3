@@ -8,7 +8,7 @@ var player;
 /*setting player variables*/
 var player_x = 300;
 var player_y = 300;
-var player_speed = 5; //setting speed of player movement
+var player_speed = 4; //setting speed of player movement
 var player_dead = false;
 
 /*setting enemy variables*/
@@ -18,7 +18,7 @@ var enemy_x = 500;
 var enemy_y = 500;
 var enemy_speed = 10; //setting overall speed of enemy ??
 var enemy_speed_x = 2;
-var enemy_speed_y = 2;
+var enemy_speed_y = 4;
 var enemy_dead = false;
 
 let frame = 0;
@@ -118,7 +118,6 @@ function BearHunt() {
     enemy_x -= 3; // move left
   }
 
-<<<<<<< HEAD
   if (enemy_y < player_y) {
     enemy_y += 3; // move down
   }
@@ -126,14 +125,3 @@ function BearHunt() {
     enemy_y -= 3; // move up
   }
 }
-=======
-     if(Pex.position.y< Player1.position.y){
-      Pex.position.y +=3;
-    }
-    if(Pex.position.y> Player1.position.y){
-      Pex.position.y -=3;
-    }
-  }
-
-  
->>>>>>> 52e97d26cab0063601527fc4afd3e2927eb8f59f
