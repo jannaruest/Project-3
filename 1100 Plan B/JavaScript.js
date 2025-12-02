@@ -6,19 +6,19 @@ var ctx;
 var bg_img;
 var player;
 /*setting player variables*/
-var player_x = 200;
+var player_x = 300;
 var player_y = 300;
-var player_speed = 4; //setting speed of player movement
+var player_speed = 5; //setting speed of player movement
 var player_dead = false;
 
 /*setting enemy variables*/
 var enemy;
 
-var enemy_x = 200;
-var enemy_y = 200;
+var enemy_x = 500;
+var enemy_y = 500;
 var enemy_speed = 10; //setting overall speed of enemy ??
-var enemy_speed_x = 4;
-var enemy_speed_y = 4;
+var enemy_speed_x = 2;
+var enemy_speed_y = 2;
 var enemy_dead = false;
 
 let frame = 0;
@@ -76,25 +76,13 @@ function Draw() {
         ctx.font = "40px Arial";
         ctx.fillText("GAME OVER!", 200, 300);
     }
-
     if (!enemy_dead) {
-        ctx.drawImage(enemy_img, enemy_x, enemy_y, 165, 200);
+          ctx.drawImage(enemy_img, enemy_x, enemy_y, 165, 200);
     }
 }
 function Update() {
-    //move enemy
-    //we can do this only if enemy_dead is false
-    enemy_x += enemy_speed_x;
-    if (enemy_x > 600)
-        enemy_speed_x *= -1;
-    if (enemy_x < 0)
-        enemy_speed_x *= -1;
-    enemy_y += enemy_speed_y;
-    if (enemy_y > 600)
-        enemy_speed_y *= -1;
-    if (enemy_y < 0)
-        enemy_speed_y *= -1;
-
+    BearHunt();
+    
     //detect collision
     //we can do this only if enemy_dead is false
     var distance2 = (player_x - enemy_x) * (player_x - enemy_x) + (player_y - enemy_y) * (player_y - enemy_y);
@@ -122,20 +110,18 @@ function KeyDown(event) {
     Draw();
 }
 
-setInterval(PeexleHunt, 100);
-  function PeexleHunt(){
-    
-    if(Pex.position.x< Player1.position.x){
-      Pex.position.x +=3;
-    }
-    if(Pex.position.x> Player1.position.x){
-      Pex.position.x -=3;
-    }
-
-     if(Pex.position.y< Player1.position.y){
-      Pex.position.y +=3;
-    }
-    if(Pex.position.y> Player1.position.y){
-      Pex.position.y -=3;
-    }
+function BearHunt() {
+  if (enemy_x < player_x) {
+    enemy_x += 3; // move right
   }
+  if (enemy_x > player_x) {
+    enemy_x -= 3; // move left
+  }
+
+  if (enemy_y < player_y) {
+    enemy_y += 3; // move down
+  }
+  if (enemy_y > player_y) {
+    enemy_y -= 3; // move up
+  }
+}
