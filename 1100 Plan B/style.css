@@ -81,7 +81,7 @@ ul {
 }
 
 /*RULES*/
-#Rules {
+.Rules-Controls {
   display: flex;
   flex-direction: column;
   border-radius: 40px;
@@ -93,22 +93,6 @@ ul {
   margin-inline: 2rem;
 }
 
-.RulesControlsPoints h3 {
-  margin-top: 3rem;
-}
-
-.RulesControlsPoints p {
-  margin-top: 0rem;
-  margin-bottom: 1rem;
-}
-
-.RulesControlsPoints ul {
-  margin: 0rem;
-}
-
-#Controls p {
-  margin-top: 0rem;
-}
 
 .VideoDemo h2 
 {
