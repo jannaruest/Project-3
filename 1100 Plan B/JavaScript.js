@@ -11,13 +11,13 @@ var enemy_img;       //
 /*setting player variables*/
 var player_x = 100;
 var player_y = 230;
-var player_speed = 5; //setting speed of player movement
+var player_speed = 4; //setting speed of player movement
 var player_dead = false;
 
 /*setting enemy variables*/
 var enemy_x = 830;
 var enemy_y = 240;
-var enemy_speed = 5; //setting overall speed of enemy ??
+var enemy_speed = 4; //setting overall speed of enemy ??
 var enemy_dead = false;
 
 //
@@ -84,10 +84,10 @@ function Draw() {
         //Game Over text
         ctx.fillStyle = "white";
         ctx.font = "65px Calibri";
-        ctx.fillText("GAME OVER!", 250, 170,);
+        ctx.fillText("GAME OVER!", 245, 170,);
         //Additional (smaller) text
         ctx.fillStyle = "white";
-        ctx.font = "50px Calibri";
+        ctx.font = "45px Calibri";
         ctx.fillText("The bear ate you!", 255, 250,);
 
         //Drawing the dead player sprite
@@ -107,17 +107,17 @@ function Draw() {
 //BearHunt function defining
 function BearHunt() {
     if (enemy_x < player_x) {
-        enemy_x += 3; // move right
+        enemy_x += enemy_speed; // move right
     }
     if (enemy_x > player_x) {
-        enemy_x -= 3; // move left
+        enemy_x -= enemy_speed; // move left
     }
 
     if (enemy_y < player_y) {
-        enemy_y += 3; // move down
+        enemy_y += enemy_speed; // move down
     }
     if (enemy_y > player_y) {
-        enemy_y -= 3; // move up
+        enemy_y -= enemy_speed; // move up
     }
 }
 
