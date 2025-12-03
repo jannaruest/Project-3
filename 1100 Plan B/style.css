@@ -1,5 +1,5 @@
 #my-canvas {
-    border: 3px solid rgb(183, 38, 38);
+  border: 3px solid rgb(183, 38, 38);
 }
 
 html,
@@ -52,8 +52,10 @@ ul {
   border: 3px solid orange;
   margin-top: 0rem;
   margin-inline: 2rem;
-  max-width: 60%;   /* shrink to 80% of parent */
-  margin: 0 auto;   /* center it horizontally */
+  max-width: 60%;
+  /* shrink to 80% of parent */
+  margin: 0 auto;
+  /* center it horizontally */
 }
 
 .Instructions-Controls h2 {
@@ -61,23 +63,26 @@ ul {
   text-decoration: underline;
   margin-bottom: 0rem;
 }
+
 .Instructions-Controls p {
   margin-top: 0.5rem;
   margin-bottom: 0.25rem;
   font-size: 18px;
 }
+
 #Controls {
   margin-top: 2rem;
 }
+
 #Controls ul {
   text-align: left auto;
 }
+
 #Instru-note p {
   margin-top: 0.25rem;
 }
 
-.VideoDemo h2 
-{
+.VideoDemo h2 {
   font-size: 36px;
   font-family: 'Calibri';
   font-weight: 800;
@@ -103,7 +108,10 @@ ul {
   margin-top: 0.5rem;
 }
 
-
+.game-section {
+  width: 800px;  /*Makes the buttons same width as canvas*/
+  margin: 0 auto;
+}
 
 
 /*BUTTON AND BELOW: */
@@ -122,9 +130,28 @@ button {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-inline: 17.5rem;
+  padding-inline: 0rem;
   margin-bottom: 2rem;
 }
+
+/*Game HTML Instructions Copy*/
+#Controls2 h2 {
+  font-size: 30px;
+  text-decoration: underline;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+}
+#Controls2 p {
+  font-size: 25px;
+}
+
+.Instructions-Controls p {
+  margin-top: 0.5rem;
+  margin-bottom: 0.25rem;
+  font-size: 18px;
+}
+
+
 
 button:hover {
   transform: scale(1.06);
@@ -136,23 +163,28 @@ button:hover {
   text-decoration: underline;
   text-align: center;
 }
+
 .Credits {
-  margin: 0.5rem auto; /* vertical spacing + horizontal centering */
+  margin: 0.5rem auto;
+  /* vertical spacing + horizontal centering */
   border-radius: 40px;
   background-color: rgb(255, 244, 188);
   max-width: 40%;
   padding: 1rem;
 }
+
 .Credits-table td {
   text-align: center;
   vertical-align: top;
   padding: auto;
 }
+
 .name {
   vertical-align: top;
   font-weight: 700;
   padding-top: 0.5rem;
 }
+
 .Credits ul {
   margin-top: 0.5rem;
   text-align: left;
@@ -160,6 +192,7 @@ button:hover {
   font-size: 15px;
   font-weight: 200;
 }
+
 .Credits li {
   padding-left: 3rem;
 }
