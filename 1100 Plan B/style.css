@@ -99,6 +99,9 @@ ul {
   color: rgb(217, 40, 40);
   /*temp color*/
 }
+#demo-pic {
+  padding-block: 5rem;
+}
 
 /*
 /*GAME.HTML CSS */
