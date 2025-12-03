@@ -11,7 +11,6 @@ body {
 
 /*INTRO PAGE FLEX BOX*/
 body {
-  background-color: #fff7da;
   color: #654321;
   margin: 0, auto;
   text-align: center;
@@ -34,12 +33,16 @@ ul {
 }
 
 
-/*RULES*/
+/*INSTRUCTIONS*/
 #Description {
   font-size: 25px;
 }
 
-.Rules-Controls {
+.image-row {
+  margin-bottom: 2rem;
+}
+
+.Instructions-Controls {
   display: flex;
   flex-direction: column;
   border-radius: 40px;
@@ -53,12 +56,12 @@ ul {
   margin: 0 auto;   /* center it horizontally */
 }
 
-.Rules-Controls h2 {
+.Instructions-Controls h2 {
   font-size: x-large;
   text-decoration: underline;
   margin-bottom: 0rem;
 }
-.Rules-Controls p {
+.Instructions-Controls p {
   margin-top: 0.5rem;
   margin-bottom: 0.25rem;
   font-size: 18px;
@@ -66,7 +69,7 @@ ul {
 #Controls {
   margin-top: 2rem;
 }
-#Rules-note p {
+#Instru-note p {
   margin-top: 0.25rem;
 }
 
@@ -109,6 +112,7 @@ button {
   color: rgb(232, 135, 0);
   font-size: 26px;
   transition: transform 0.2s ease;
+  margin-bottom: 2rem;
 }
 
 .UI-buttons {
@@ -123,8 +127,41 @@ button:hover {
   transform: scale(1.06);
 }
 
+#Credits-header {
+  margin-top: 2rem;
+  margin-bottom: 0rem;
+  text-decoration: underline;
+}
+.Credits-table {
+  margin: 2rem auto; /* vertical spacing + horizontal centering */
+  border-radius: 40px;
+  background-color: rgb(255, 244, 188);
+  max-width: 70%;
+  text-align: center;
+  padding: 1rem;
+}
+.Credits-table td {
+  text-align: center;
+  vertical-align: top;
+  padding: auto;
+}
+.name {
+  vertical-align: top;
+  font-weight: 700;
+  padding-top: 0.5rem;
+}
+.Credits ul {
+  margin-top: 0.5rem;
+  text-align: left;
+  margin-bottom: 0.5rem;
+  font-size: 15px;
+  font-weight: 200;
+}
+.Credits li {
+  padding-left: 3rem;
+}
 
-
+/*Footer and Below*/
 .FooterCopyright {
   margin-top: 1.5rem;
   width: 100%;
