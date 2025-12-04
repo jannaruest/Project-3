@@ -4,15 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>"Bearly" Alive!</title>
     <link rel="stylesheet" href="style.css">
     <script src="JavaScript.js"></script>
 </head>
 
-<body> <!--Immediately tells the canvas images to load-->
+<body>
+    <!-- Title -->
     <div class="title">
         <h2>"Bearly" Alive!</h2>
     </div>
+
+    <!-- Instructions -->
     <section class="Instructions-Controls">
         <div id="Controls2">
             <h2>Controls:</h2>
@@ -20,12 +23,13 @@
         </div>
     </section>
 
+    <!-- Game section -->
     <div class="game-section">
         <canvas id="my-canvas" width="800" height="600">
-            <!--NOTE: Used CSS to set border and background colour-->
-            Your browser does not support this HTML canvas tag
+            Your browser does not support the HTML canvas tag
         </canvas>
-        <!--RESET & HOME BUTTONS HERE-->
+
+        <!-- Buttons -->
         <div class="UI-buttons">
             <button id="home-button" onclick="window.location.href='index.html'">Return Home</button>
             <button id="reset-button" onclick="reset()">Reset Game</button>
